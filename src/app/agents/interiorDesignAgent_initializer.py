@@ -51,7 +51,7 @@ with project_client:
     else:
         agent = project_client.agents.create_agent(
             model=os.environ["AZURE_AI_AGENT_MODEL_DEPLOYMENT_NAME"],  # Model deployment name
-            name="Cora",  # Name of the agent
+            name="Cora",  # Name of the agent 
             instructions=ID_PROMPT,  # Instructions for the agent
             # toolset=toolset
         )
